@@ -1,0 +1,13 @@
+#version 330 core
+in vec3 Colors;
+
+out vec3 PixColor;
+
+void main(){
+vec3 newColors;
+newColors.x = 1 - Colors.x;
+newColors.y = 1 - Colors.y;
+newColors.z = 1 - Colors.z;
+
+PixColor = newColors;
+}
